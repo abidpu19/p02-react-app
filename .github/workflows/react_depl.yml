@@ -43,4 +43,4 @@ jobs:
       - name: installing Surge
         run:  npm install -g surge
       - name: Deploy on surge
-        run: ./build breact_app.surge.sh --token ${{secrets.SURGE_REACT_TOKEN}}
+        run: surge ./build breact_app.surge.sh --token ${{secrets.SURGE_REACT_TOKEN}}
